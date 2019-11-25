@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <item
+        android:id="@+id/action_edittext"
+        app:actionLayout="@layout/search_view"
+
+        android:title="recherche"
+        app:showAsAction="ifRoom|collapseActionView"/>
+
+
+    <item
+        android:id="@+id/action_recherche"
+        android:icon="@mipmap/recherche_round"
+        android:title="recherche"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_supprimer"
+        android:icon="@mipmap/supprimer_round"
+        android:title="supprimer"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_rafrechir"
+        android:icon="@mipmap/rafraichir_round"
+        android:title="refresh"
+        app:showAsAction="always"/>
+
+
+
+
+
+
+
+</menu>

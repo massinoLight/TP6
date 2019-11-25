@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fond"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00F7F0F0"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/toolbar_layout"
+        android:id="@+id/toolbar"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mon_recycler"
+        android:layout_width="393dp"
+        android:layout_height="534dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="#00070707"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.558" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_ajouter"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#000"
+        android:backgroundTint="#00090808"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:foreground="@color/colorPrimaryDarkLow"
+        android:foregroundGravity="center"
+        app:backgroundTint="#00050505"
+        app:elevation="4dp"
+        app:hoveredFocusedTranslationZ="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mon_recycler"
+        app:layout_constraintVertical_bias="0.0"
+        app:pressedTranslationZ="24dp"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
